@@ -8,4 +8,8 @@ resource "docker_container" "nginxtest" {
   image = docker_image.nginx.image_id
   name  = "nginxtest"
 
+  ports {
+    internal = "80"
+    external = "8000"
+  }
 }
