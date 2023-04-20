@@ -1,0 +1,4 @@
+# ansible - docker install - inventory
+[dockerhosts]
+ansi-node1
+ansi-master1
