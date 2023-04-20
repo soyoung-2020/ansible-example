@@ -23,7 +23,7 @@ notify
 $ ssh ansi-node1 docker ps
 $ curl 192.168.56.21:8080
 
-
+------terraform-------
 edit main.tf
 resource "docker_network" "private_network" {
   name = "my_network"
