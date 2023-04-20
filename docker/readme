@@ -22,3 +22,17 @@ $ ansible-playbook playbook-container.yml -i inventory
 notify 
 $ ssh ansi-node1 docker ps
 $ curl 192.168.56.21:8080
+
+
+edit main.tf
+resource "docker_network" "private_network" {
+  name = "my_network"
+  driver = "bridge"
+}
+resource "docker_container" "nginxtest" {
+  network_mode = "bridge"
+  networks_advanced {
+    name = docker_network.private_network.name
+    aliases = ["my_metwork"]
+  }
+}
