@@ -1,0 +1,5 @@
+use
+$ ansible-playbook playbook.yml -i inventory  --syntax-check
+$ ansible-playbook playbook.yml -i inventory  --list-hosts
+$ ansible-playbook playbook.yml -i inventory  --list-task
+$ ansible-playbook playbook.yml -i inventory
