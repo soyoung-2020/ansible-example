@@ -1,3 +1,6 @@
+install for docker
+$ ansible-galaxy collection install community.docker
+
 use
 $ ansible-playbook playbook.yml -i inventory  --syntax-check
 $ ansible-playbook playbook.yml -i inventory  --list-hosts
