@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "docker" {
-  host     = "ssh://vagrant@node1:22"
+  host     = "ssh://vagrant@ansible-node1:22"
   ssh_opts = ["-o", "StrictHostKeyChecking=no", "-o", "UserKnownHostsFile=/dev/null"]
 }
