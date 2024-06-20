@@ -1,5 +1,5 @@
 ---
-- hosts: ansi-node1
+- hosts: ansible-node1
   become: true
   vars:
     container_count: 1
