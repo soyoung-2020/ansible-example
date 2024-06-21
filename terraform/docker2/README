@@ -1,0 +1,16 @@
+command
+$ terraform init
+
+$ terraform validate
+
+$ terraform plan
+
+$ terraform apply
+
+verify
+$ ssh ansible-node1 docker images
+$ ssh ansible-node1 docker ps -a
+
+
+$ terraform show
+$ terraform destroy
