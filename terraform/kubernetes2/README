@@ -1,0 +1,4 @@
+
+1. test container image
+2. application deploy to kubernetes cluster
+3. using helm chart
