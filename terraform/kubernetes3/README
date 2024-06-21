@@ -21,3 +21,5 @@ edit main.tf
     Sets an environment variable in the Docker container COLOR with the value "blue"
     Publish container port 8080 (the HTTP port used by our color application)
     Sets CPU and memory limits.
+
+reference : https://www.itwonderlab.com/kubernetes-with-terraform/
