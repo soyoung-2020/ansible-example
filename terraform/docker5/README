@@ -1,0 +1,35 @@
+required host :
+-control1 : intalled terraform
+-node1 : installed docker 
+
+using workspace
+image from mariadb/bookstack
+using docker volume/network
+create containers
+
+
+
+
+
+
+command
+$ mkdir workspace_test && cd workspace_test
+$ terraform workspace new dev
+
+$ mkdir volumes && cd volumes
+$ terraform workspace new dev
+
+
+$ terraform init
+
+$ terraform validate
+
+$ terraform plan
+
+$ terraform apply
+
+verify
+$ ssh ansible-node1 docker network ls
+$ ssh ansible-node1 docker volume ls
+$ ssh ansible-node1 docker images
+$ ssh ansible-node1 docker ps -a
