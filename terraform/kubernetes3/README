@@ -1,2 +1,23 @@
 appliation deploy to kubernetes cluster
 create service nordport
+
+
+
+edit main.tf
+-Lines 12 defines the required version for Terraform. We will be using Terraform 1.15 or above.
+
+-Lines 18 to 25 define the configuration for the Terraform Kubernetes provider
+    config_path (optional): sets the path for the kubeconfig file if it differs from the standard location
+    config_context (optional): sets the name of the Kubernetes context to use, if differs from default. We will use kubernetes-admin@ditwl-k8s-01 that corresponds to our ~/.kube/config file.
+
+-Lines 31 to 83 define a Terraform Kubernetes deployment resource named color with the following properties:
+  Name = "color-blue-dep"
+  Labels
+    app="color"
+    color="blue"
+  Replicas: 3
+    All replicas use a container template for the PODs that:
+    Pulls the Docker image "itwonderlab/color" from the public Docket registry (https://hub.docker.com/u/itwonderlab)
+    Sets an environment variable in the Docker container COLOR with the value "blue"
+    Publish container port 8080 (the HTTP port used by our color application)
+    Sets CPU and memory limits.
