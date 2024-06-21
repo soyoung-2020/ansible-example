@@ -1,3 +1,14 @@
 required host
 -ansible controller1 : install ansible
 -ansible node1 : only create (install docker to ansible)
+
+
+
+required job
+$ ssh-keygen
+$ ssh-copy-id vagrant@ansible-control1
+$ ssh-copy-id vagrant@ansible-node1
+
+$ sudo vi /etc/hosts
+192.168.56.31 ansible-control1 ansible-control
+192.168.56.41 ansible-node1 ansible-node1
