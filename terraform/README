@@ -17,5 +17,15 @@ https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resourc
 
 
 
+aws Provider
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+https://registry.terraform.io/providers/hashicorp/aws/4.64.0
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/default_vpc
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/resource-tagging
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/continuous-validation-examples
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/using-aws-with-awscc-provider
+
+
+
 etc terraform file
 - https://github.com/garbetjie/terraform-kubernetes-deployment/tree/master
