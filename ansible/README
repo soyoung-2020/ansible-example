@@ -1,0 +1,3 @@
+required host
+-ansible controller1 : install ansible
+-ansible node1 : only create (install docker to ansible)
