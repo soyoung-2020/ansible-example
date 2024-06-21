@@ -15,7 +15,15 @@ https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs
 https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/guides/getting-started.html
 https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/api_service
 
-
+graph
+$ terraform graph
+$ terraform graph > graph.dot
+dot -Tpng graph.dot -o graph.png
+$ terraform plan -out=plan.out
+$ terraform show -json plan.out > plan.json
+etc
+    - blast radius https://28mm.github.io/blast-radius-docs/
+    = inframap (Go)  https://github.com/cycloidio/inframap
 
 aws Provider
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
