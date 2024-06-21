@@ -8,3 +8,14 @@ provider.tf: This file is very important as we provide information to terraform 
 docker Provider
 https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs
 https://registry.terraform.io/providers/rohdealx/docker/latest/docs/resources/registry_image
+
+
+kubernetes Provider
+https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs
+https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/guides/getting-started.html
+https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/api_service
+
+
+
+etc terraform file
+- 
