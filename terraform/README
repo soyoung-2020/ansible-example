@@ -1,3 +1,10 @@
+main.tf : This file contains actual terraform code to create service or any particular resource
+vars.tf : This file is used to define variable types and optionally set the values.
+output.tf: This file contains the output of resource we wish to store. The output are displayed
+terraform.tfvars: This file contains the actual values of variables which we created in vars.tf
+provider.tf: This file is very important as we provide information to terraform regarding on which cloud provider it needs to execute the code
+
+
 docker Provider
 https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs
 https://registry.terraform.io/providers/rohdealx/docker/latest/docs/resources/registry_image
