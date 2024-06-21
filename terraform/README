@@ -1,0 +1,3 @@
+docker Provider
+https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs
+https://registry.terraform.io/providers/rohdealx/docker/latest/docs/resources/registry_image
