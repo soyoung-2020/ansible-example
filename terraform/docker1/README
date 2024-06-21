@@ -1,0 +1,7 @@
+-required :
+control1 : intalled terraform
+node1 : installed docker 
+
+plan 
+-pull image  
+-create container 
