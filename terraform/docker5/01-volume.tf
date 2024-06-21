@@ -7,6 +7,11 @@ terraform {
   }
 }
 
+provider "docker" {
+  host     = "ssh://vagrant@ansible-node1:22"
+#  ssh_opts = ["-o", "StrictHostKeyChecking=no", "-o", "UserKnownHostsFile=/dev/null"]
+}
+
 resource "docker_volume" "bookstack_data" {
   name = "bookstack_data_${terraform.workspace}"
 }
