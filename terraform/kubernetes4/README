@@ -6,4 +6,10 @@ created namespace (namespace/main.tf)
 
 
 
+add job ( or edit service type- LoadBalncer)
+kubectl -n whoami port-forward svc/whoami-service 8080:80
+curl http://localhost:8080
+
+
+reference
 https://controlplane.com/community-blog/post/orchestrating-kubernetes-with-terraform
