@@ -10,3 +10,4 @@ main.tf
 
 
 Reference : https://github.com/KG-sugang-project/terraform/blob/master/00_main.tf
+https://github.com/KG-sugang-project/terraform/blob/master/03_Subnet.tf
