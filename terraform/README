@@ -38,4 +38,7 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/using-a
 
 
 etc terraform file
+[kubernetes]
 - https://github.com/garbetjie/terraform-kubernetes-deployment/tree/master
+[aws]
+ - https://github.com/KG-sugang-project/terraform
