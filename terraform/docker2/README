@@ -14,3 +14,8 @@ $ ssh ansible-node1 docker ps -a
 
 $ terraform show
 $ terraform destroy
+
+
+add job 
+- edit main.tf
+- docker image pull + image build + create container
