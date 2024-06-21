@@ -25,3 +25,21 @@ resource "kubernetes_deployment" "whoami_deployment" {
     }
   }
 }
+
+resource "kubernetes_service" "whoami_service" {
+  metadata {
+    name      = "whoami-service"
+    namespace = kubernetes_namespace.whoami.metadata[0].name
+  }
+  spec {
+    selector = {
+      app = "whoami"
+    }
+    port {
+      protocol   = "TCP"
+      port       = 80
+      target_port = 80
+    }
+    type = "ClusterIP"
+  }
+}
