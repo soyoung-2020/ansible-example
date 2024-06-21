@@ -1,8 +1,11 @@
 vagrant
-  controller1 : terraform
-  node1  : docker (install from ansible)
-  node2  : kubernetes cluster controller  (install from ansible)
-  node2  : kubernetes cluster node1
+ - ansible Vagrantfile
+   ansible-control1 : ansible
+   ansible-node1 : none (install docker from ansible)
+ - kubernetes Vagrantfile
+  controller1 : kubernetes controller . ansible(kubespray), terraform
+  node2  : kubernetes cluster controller  (install kubernetes from ansible-kubespray)
+  node3  : kubernetes cluster node1 (install kubernetes from ansible-kubespray)
 
 main.tf : This file contains actual terraform code to create service or any particular resource
 vars.tf : This file is used to define variable types and optionally set the values.
