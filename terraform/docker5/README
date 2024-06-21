@@ -13,19 +13,28 @@ create containers
 
 
 command
+1. env terraform
 $ mkdir workspace_test && cd workspace_test
 $ terraform workspace new dev
 
+2. env volume
 $ mkdir volumes && cd volumes
 $ terraform workspace new dev
 
-
+3. create volume
+$ vi 03-volume.tf
 $ terraform init
+$ terraform apply
 
+4. write
+$ vi 04-image.tf
+$ vi 05-database.tf
+$ vi 06-boostack.tf
+   
+$ terraform fmt
+$ terraform init
 $ terraform validate
-
 $ terraform plan
-
 $ terraform apply
 
 verify
@@ -33,3 +42,17 @@ $ ssh ansible-node1 docker network ls
 $ ssh ansible-node1 docker volume ls
 $ ssh ansible-node1 docker images
 $ ssh ansible-node1 docker ps -a
+
+
+- production bookstack
+cd volumes
+terraform workspace new prod
+terraform init
+terraform apply
+cd ..
+terraform workspace new prod
+terraform init
+terraform apply
+
+
+cd volumes
