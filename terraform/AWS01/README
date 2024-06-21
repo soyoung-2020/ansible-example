@@ -1,0 +1,12 @@
+![topolgy](https://postfiles.pstatic.net/MjAyMjA3MTFfMjA3/MDAxNjU3NTAyMTM1OTI3.bNHi_xQxARf4A9J071W9MaWFGBY8YXnyiHBLlTVTP80g.pAVWNDSWMVMKo_Aqai9mVoPW_BtFPzbpFcD-nMM5-Zgg.PNG.holibunny/image.png?type=w773)
+
+provider.tf
+main.tf
+1. security group
+2. key
+3. VPC
+
+
+
+
+Reference : https://github.com/KG-sugang-project/terraform/blob/master/00_main.tf
