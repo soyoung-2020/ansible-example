@@ -20,3 +20,4 @@ verify
 $ ssh ansible-node1 docker network ls
 $ ssh ansible-node1 docker images
 $ ssh ansible-node1 docker ps -a
+$ docker network inspect nginx_network
